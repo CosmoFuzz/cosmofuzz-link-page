@@ -27,34 +27,36 @@
       padding: 20px;
     }
 
-    /* Hero section moved into main content */
     .hero {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     h1 {
       font-size: 2rem;
-      margin-bottom: 0; /* Adjusted to 0px */
+      margin: 10px 0;
       background: linear-gradient(45deg, #915BF4, #E4405F);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    /* Profile image resized to 180x180 */
     .profile-img {
       width: 180px;
       height: 180px;
       border-radius: 50%;
       box-shadow: 0 0 20px rgba(145,91,244,0.3);
-      margin: 0 auto; /* Adjusted to 0px */
+      margin: 0 auto;
       display: block;
     }
 
     .about {
       color: rgba(255,255,255,0.85);
       text-align: center;
-      margin-top: 40px;
+      margin-top: 20px;
+    }
+
+    .about p {
+      font-size: 1rem;
     }
 
     .space-divider {
@@ -97,7 +99,6 @@
       background: rgba(255,255,255,0.1);
       border: 1px solid rgba(255,255,255,0.1);
       gap: 0.5rem;
-      text-align: center;
     }
 
     .btn:hover {
@@ -159,7 +160,7 @@
       margin-bottom: 80px;
     }
 
-    .about-me-heading {
+    .section-heading {
       font-size: 1.2rem;
       color: #915BF4;
       margin-bottom: 1.5rem;
@@ -169,25 +170,16 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
-      margin-bottom: 1.5rem;
-      max-width: 400px;
       margin: 0 auto 1.5rem;
+      max-width: 400px;
     }
 
-    .portrait-placeholder {
+    .space-image {
       width: 100%;
       height: 300px;
-      background: #666;
       border-radius: 12px;
+      object-fit: cover;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-
-    .about-me-text {
-      font-size: 0.95rem;
-      color: rgba(255,255,255,0.85);
-      line-height: 1.6;
-      max-width: 500px;
-      margin: 0 auto;
     }
 
     @media (max-width: 768px) {
@@ -196,7 +188,7 @@
         gap: 1rem;
         max-width: 300px;
       }
-      .portrait-placeholder {
+      .space-image {
         height: 225px;
       }
     }
@@ -237,27 +229,21 @@
         font-size: 0.9rem;
       }
     }
-
-    .main-first-btn {
-      margin-top: 10px;
-    }
   </style>
 </head>
 <body>
-  <!-- Main content -->
   <div class="container">
-    <!-- Hero items (previously header items) moved here -->
     <section class="hero">
-      <h1>CosmoFuzz</h1>
       <img src="images/CosmoFuzz-ProfilePicture.png" alt="CosmoFuzz" class="profile-img">
+      <h1>CosmoFuzz</h1>
     </section>
 
     <section class="about">
-      <p>👋 Hey there! I'm Fuzz, a UK-based space enthusiast creating cosmic content that makes astrophysics accessible and awe-inspiring. Join me in exploring black holes, exoplanets, and the latest space discoveries!</p>
+      <p>👋 Hey there! I'm Fuzz, a UK-based creator who is absolutely fascinated by space... My goal is to foster a community through my content that makes astrophysics, space facts, and general theories about the universe easily accessible and fun!</p>
       <div class="space-divider"></div>
     </section>
 
-    <a href="https://spaceprojector.com" class="btn main-first-btn">
+    <a href="https://spaceprojector.com" class="btn">
       <i class="fas fa-satellite"></i>
       Space Projector
     </a>
@@ -280,20 +266,20 @@
     </div>
 
     <div class="social-links">
-      <a href="https://youtube.com" class="social-icon">
+      <a href="https://youtube.com/@cosmofuzzyt" class="social-icon">
         <i class="fab fa-youtube"></i>
       </a>
-      <a href="https://tiktok.com" class="social-icon">
+      <a href="https://tiktok.com/@cosmofuzz" class="social-icon">
         <i class="fab fa-tiktok"></i>
       </a>
-      <a href="https://instagram.com" class="social-icon">
+      <a href="https://instagram.com/cosmofuzz" class="social-icon">
         <i class="fab fa-instagram"></i>
       </a>
     </div>
 
     <section class="brand-section">
-      <h2 class="brand-heading">For Brands:</h2>
-      <p>Let's collaborate on space-themed educational content! I specialize in creating engaging partnerships that combine science with storytelling. You can email me at:</p>
+      <h2 class="section-heading">Brand Partnerships</h2>
+      <p>Do you want your brand in front of curious, captivated minds? Of course you do! By blending my expertise in creating engaging content with your brand’s vision, we’ll turn your ideas into content that resonates deeply with genuinely passionate people. I’m just an email away:</p>
       <div class="contact-email">
         <i class="fas fa-envelope"></i>
         Contact@CosmoFuzz.com
@@ -301,16 +287,14 @@
     </section>
 
     <section class="about-me">
-      <h3 class="about-me-heading">About Me</h3>
+      <h3 class="section-heading">Me!</h3>
       <div class="photo-gallery">
-        <div class="portrait-placeholder"></div>
-        <div class="portrait-placeholder"></div>
+        <img src="images/Me-Image-1.jpg" alt="Space Photography" class="space-image">
+        <img src="images/Me-Image-2.jpg" alt="Astronomy Gear" class="space-image">
       </div>
-      <p class="about-me-text">I love to do photography—it's my main hobby and I've been doing it since 2017</p>
     </section>
   </div>
 
-  <!-- Floating "Partner with Me" button -->
   <a href="mailto:contact@cosmofuzz.com" class="email-btn">
     <i class="fas fa-envelope"></i>
     Partner with Me
